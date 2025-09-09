@@ -3,8 +3,8 @@ import pandas as pd
 import joblib
 
 # --- Load your trained model and encoder ---
-model = joblib.load('../encoders/laptop_price_model.pkl')  # your trained model
-encoder = joblib.load('../encoders/encoder.pkl')           # your fitted OneHotEncoder
+model = joblib.load('./encoders/laptop_price_model.pkl')  # your trained model
+encoder = joblib.load('./encoders/encoder.pkl')           # your fitted OneHotEncoder
 
 # --- Streamlit Page Configuration ---
 st.set_page_config(page_title="Laptop Price Predictor", page_icon="💻", layout="wide")
